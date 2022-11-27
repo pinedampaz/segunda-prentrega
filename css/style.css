@@ -1,0 +1,455 @@
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-decoration-color: none;
+    list-style: none;
+}
+
+#flex-header {
+    background-color: #FCF9F4;
+    width: 100vw;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#flex-header .flex-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 40px;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 35px;
+}
+
+#flex-header .flex-menu .menu-items {
+    background-color: #FE6340;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 110px;
+    border-radius: 20px;
+    text-decoration-color: #FCF9F4;
+}
+
+#flex-header .flex-menu .menu-items:hover{
+    background-color: #475A51;
+    color: #FE6340;
+}
+
+#flex-header .flex-menu .menu-items:active{
+    transform: translateY(4px);
+}
+
+#flex-header .flex-menu .menu-items-logo{
+    display: none;
+}
+
+
+#flex-header .flex-menu .menu-items a {
+    color: #FCF9F4;
+}
+
+#flex-header .flex-menu .menu-items a:hover {
+    color: #FE6340;
+}
+
+#flex-header .logo img {
+    height: 70px;
+    width: auto;
+    margin-left: 35px;
+}
+
+#flex-footer {
+    background-color: #D0BFB8;
+    width: 100vw;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-items: center;
+}
+
+#flex-footer .subscribe-text {
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    color: #FCF9F4;
+}
+
+#flex-footer .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+#flex-footer .form .form-input {
+    border-radius: 20px;
+    background-color: #D0BFB8;
+    border-color: #FE6340;
+    color: #FCF9F4;
+}
+
+#flex-footer .form .form-input-confirm {
+    border-radius: 20px;
+    background-color: #FE6340;
+    border-color: #FE6340;
+    color: #FCF9F4;
+}
+
+#flex-footer .social-media {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#flex-footer .social-media .icons {
+    margin-left: 25px;
+    color: #FCF9F4;
+}
+
+#flex-footer .form .form-input-confirm:hover{
+    background-color: #475A51;
+    color: #FE6340;
+    }
+
+
+/* INDEX */
+
+#main-index {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "carousel carousel introtext"
+        "indexcards indexcards indexcards"
+        "video video contact"
+        "mapa mapa mapa"
+}
+
+#carouselExampleControls {
+    grid-area: carousel;
+    background: red;
+    width: 100%;
+    height: auto;
+}
+
+.introtext {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    grid-area: introtext;
+    background: #D0BFB8;
+    align-items: center;
+    color: #475A51;
+    text-align: center;
+}
+
+.introtext .button {
+    background-color: #FE6340;
+    border: #FE6340;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 110px;
+    border-radius: 20px;
+}
+
+.indexcards {
+    padding: 20px;
+    grid-area: indexcards;
+    background: #475A51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #F4F3EE;
+}
+
+.indexcards .card {
+    height: auto;
+    color: #475A51;
+    margin-top: 20px;
+}
+
+.indexcards .card:hover {
+    transform: scale(1.03);
+  }
+
+.indexcards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    text-justify: auto;
+}
+
+.indexcards .card .card-body .btn {
+    background-color: #FE6340;
+    border: #FE6340;
+}
+
+.indexcards .card .card-body .btn:hover {
+    background-color: #475A51;
+    border: #475A51;
+}
+
+.video-section {
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.video-section iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.indexcontact {
+    color: #475A51;
+    display: flex;
+    flex-direction: column;
+    grid-area: contact;
+    background-image: url(../Imagenes/work-50358954-all-over-print-tote-bag.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.indexcontact p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.indexcontact .menu-items {
+    background-color: #FE6340;
+     padding: 5px;
+    text-align: center;
+    width: 110px;
+    border-radius: 20px;
+    text-decoration-color: #FCF9F4;
+margin: auto;
+}
+
+.indexcontact .menu-items a {
+    color: #FCF9F4;
+}
+
+.indexcontact .menu-items:hover{
+    background-color: #475A51;
+    color: #FE6340;
+}
+
+
+
+.indexcontact .menu-items a:hover {
+    color: #FE6340;
+}
+
+.areamapa {
+    height: 500px;
+    grid-area: mapa;
+    background-color: #FE6340;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.areamapa .mapa {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+
+.areamapa .letsmeet {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-content: center;
+    color: #FCF9F4;
+    padding: 150px;
+}
+
+.areamapa .letsmeet ul {
+    list-style: none;
+}
+
+.areamapa .letsmeet h3 {
+    text-align: center;
+}
+
+/* CONTACT PAGE */
+
+#main-contact {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "contactform contact"
+        "mapa mapa"
+}
+
+.contactform {
+    grid-area: contactform;
+    background-color: #475A51;
+    color: #F4F3EE;
+    padding: 30px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.bloqueformulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 15px;
+}
+
+.bloqueformulario textarea {
+    border-radius: 20px;
+}
+
+.formulariocontrol {
+    background-color: #F4F3EE;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: row;
+    padding-right: 150px;
+    justify-content: flex-end;
+}
+
+.boton {
+    background-color: #FE6340;
+    text-align: center;
+    margin-left: 15px;
+    width: 110px;
+    border-radius: 20px;
+    border: #F4F3EE;
+    color: #F4F3EE;
+}
+
+/* ABOUT PAGE */
+
+#aboutme {
+    display: flex;
+    flex-direction: row;
+}
+
+/* PORTFOLIO PAGE */
+#patters #carouselExampleControls {
+    height: 450px;
+    display: inline;
+}
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    #flex-header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    #flex-header .logo{
+   display: none;
+    }
+
+
+    
+    #flex-header .flex-menu {
+        display: flex;
+        flex-direction: column;
+height: auto;
+align-items: center;
+    }
+
+    #flex-header .flex-menu .menu-items a{
+        margin-top: 5px;
+ 
+    }
+
+    #flex-header .flex-menu .menu-items-logo{
+        display: contents;
+    }
+
+.home{
+        display: none;
+    }
+
+    #main-index {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+
+    .video-section {
+        display: none;
+    }
+
+    .areamapa {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .indexcards {
+        display: flex;
+        flex-direction: column;
+    }
+
+.indexcards .cards{
+    padding: 20px;
+}
+
+#flex-footer{
+    width: 100vw;
+    height: auto;
+    justify-items: center;
+}
+
+#flex-footer .form{
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+}
+
+#flex-footer .form .form-input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#flex-footer .form .form-input-confirm{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
